@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Miguel no sabe HTML</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="Generador.js"></script>
+	<script type="text/javascript" src="beautify-html.js"></script>
+	<style>
+		div.left {
+			float: left;
+			width: 30%;
+		}
+		div.right {
+			float: right;
+			width: 70%;
+		}
+		input[type=text]{
+			width: 250px;
+		}
+	</style>
+</head>
+<body>
+	<div class="left">
+		<button id="addbut">Agregar Pregunta</button>
+		<button id="generarbut">Generar</button>
+		<div id="contenedor"></div>
+	</div>
+	<div class="right">
+		<button id="renderbut">Actualizar</button><br />
+		<iframe id="frame" height="400" width="600">You need a Frames Capable browser to view this content.</iframe><br />
+		<textarea id='output' rows='15' cols='80'></textarea><br />
+		<a download="autoevaluacion.xhtml" id="downloadlink" style="display: none;">Bajar Archivo</a>
+	</div>
+</body>
+</html>
